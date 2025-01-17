@@ -22,6 +22,7 @@ export default [
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      three,
     },
     rules: {
       ...js.configs.recommended.rules,
@@ -33,6 +34,8 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      //Three.js-specific rules
+      ...three.configs.recommended.rules,
     },
   },
 ]
